@@ -12,7 +12,7 @@
 @SageX3AutomatedTestPlatform
 Feature: XX1JQ_2 - CreationEvenementQualite
 
-    Scenario: XX1JQ_B1_1 - Login scenario
+    Scenario: XX1JQ_2_1 - Login scenario
         Given the user is logged into Sage X3 with "param:loginType" using user name "param:loginUserName" and password "param:loginPassword"
         #     # And the user waits 3 seconds
         And the user changes the main language code to "fr-FR"
@@ -63,5 +63,5 @@ Feature: XX1JQ_2 - CreationEvenementQualite
         #Close the function
         Then the user clicks the Close page action icon on the header panel
 
-    Scenario: XX1JQ_B1_7 - Logout scenario
+    Scenario: XX1JQ_2_7 - Logout scenario
         Then the user logs-out from the system

@@ -32,9 +32,10 @@ Feature: XX1JQ_1_DeclenchmentEQviaOF
         # And the user clicks on the selected cell
         # Then the value of the "Numéro O.F" text field is "WOFR0121146"
         Given the user selects the text field with name: "Numéro O.F"
-        When the user writes "WOFR0121146" to the selected text field
+        And the user writes the stored text with key "ENV_NUMEROOF" in the selected text field
         And the user hits tab
-        Then the value of the "Numéro O.F" text field is "WOFR0121146"
+        Then the value of the selected text field matches the stored text with key "ENV_NUMEROOF"
+    # Then the value of the "Numéro O.F" text field is "WOFR0121146"
 
     # Then the value of the "Site planification" text field is "FR012"
 
